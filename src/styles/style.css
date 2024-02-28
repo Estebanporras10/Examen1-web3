@@ -1,14 +1,14 @@
 .pokemon-card {
   border: 1px solid #000000;
-  border-radius: 25%;
+  border-radius: 15%;
   padding: 10px;
   margin: 10px;
   text-align: center;
-  background-color: #f4f4f4;
+  background-color: #69c4c7;
 }
 
 .pokemon-name {
-  color: #555;
+  color: #000000;
   text-transform: capitalize;
 }
 
@@ -45,4 +45,11 @@
   display: flex;
   justify-content: center;
   margin-bottom: 20px; 
+}
+
+
+.modal-container {
+  border-radius: 15%;
+  background-color: #69c4c7;
+  padding: 20px;
 }

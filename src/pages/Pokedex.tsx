@@ -109,13 +109,13 @@ const Home = () => {
       <Modal isOpen={isModalOpen} closeModal={closeModal}>
         {selectedPokemon && (
           <div className="pokemon-details">
-            <h1>Nombre de esta belleza: {selectedPokemon.name}</h1>
+            <h1>Nombre: {selectedPokemon.name}</h1>
             <img src={selectedPokemon.image} alt={selectedPokemon.name} />
-            <h2>Number: {selectedPokemon.id}</h2>
-            <h2>Height: {selectedPokemon.height}</h2>
-            <h2>Weight: {selectedPokemon.weight}</h2>
-            <h2>Types: {selectedPokemon.types.map(type => type.type.name).join(", ")}</h2>
-            <h2>Abilities: {selectedPokemon.abilities.map(ability => ability.ability.name).join(", ")}</h2>
+            <h2>Numero: {selectedPokemon.id}</h2>
+            <h2>Altura: {selectedPokemon.height}</h2>
+            <h2>Peso: {selectedPokemon.weight}</h2>
+            <h2>Tipo: {selectedPokemon.types.map(type => type.type.name).join(", ")}</h2>
+            <h2>Habilidades: {selectedPokemon.abilities.map(ability => ability.ability.name).join(", ")}</h2>
         </div>
         )}
       </Modal>
