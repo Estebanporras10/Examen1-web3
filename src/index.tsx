@@ -22,8 +22,6 @@ root.render(
       <Route path="/pokemon/:name" element={<PokemonDetails isOpen={false} closeModal={function (): void {
         throw new Error("Function not implemented.");
       } } children={undefined} />} />
-
-
     </Routes>
   </BrowserRouter>
 );

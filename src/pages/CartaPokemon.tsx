@@ -23,5 +23,4 @@ const PokemonCard: React.FC<PokemonCardProps & { onClick: () => void }> = ({ id,
   );
 };
 
-
 export default PokemonCard;

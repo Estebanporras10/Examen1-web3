@@ -37,7 +37,6 @@ const Home = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [pokemons, setPokemons] = useState<Pokemon[]>([]);
   const [selectedPokemon, setSelectedPokemon] = useState<Pokemon | null>(null);
-  const navigate = useNavigate();
 
   const fetchPokemons = (gen: number) => {
     const { offset, limit } = generationRanges[gen];
@@ -82,15 +81,16 @@ const Home = () => {
 
   return (
     <div>
-      <select value={tempGeneration} onChange={(e) => setTempGeneration(Number(e.target.value))}>
-        {Object.keys(generationRanges).map((gen) => (
-          <option key={gen} value={gen}>
-            Generación {gen}
-          </option>
-        ))}
-      </select>
-
-      <button onClick={applyFilters}>Aplicar</button>
+      <div className="button-container">
+        <select value={tempGeneration} onChange={(e) => setTempGeneration(Number(e.target.value))}>
+          {Object.keys(generationRanges).map((gen) => (
+            <option key={gen} value={gen}>
+              Generación {gen}
+            </option>
+          ))}
+        </select>
+        <button onClick={applyFilters}>Aplicar</button>
+      </div>
 
       <div className="pokemon-container">
         {pokemons.map(pokemon => (
