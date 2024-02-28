@@ -1,8 +1,8 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import PokemonCard from "./CartaPokemon";
+import PokemonCard from "./carta";
 import "../styles/style.css";
-import Modal from "./PokemonDetails";
+import Modal from "./detalles";
 import { useNavigate } from "react-router-dom";
 
 interface GenerationRange {
@@ -123,4 +123,6 @@ const Home = () => {
   );
 };
 
+
 export default Home;
+

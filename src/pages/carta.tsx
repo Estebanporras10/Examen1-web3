@@ -9,7 +9,7 @@ interface PokemonCardProps {
   onClick: () => void;
 }
 
-const PokemonCard: React.FC<PokemonCardProps & { onClick: () => void }> = ({ id, name, image, types, abilities, onClick }) => {
+const Carta: React.FC<PokemonCardProps & { onClick: () => void }> = ({ id, name, image, types, abilities, onClick }) => {
   return (
     <div className="pokemon-card" onClick={onClick}>
       <img src={image} alt={name} />
@@ -23,4 +23,4 @@ const PokemonCard: React.FC<PokemonCardProps & { onClick: () => void }> = ({ id,
   );
 };
 
-export default PokemonCard;
+export default Carta;

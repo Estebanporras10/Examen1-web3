@@ -5,7 +5,7 @@ import "./index.css";
 import App from "./App";
 import NavBar from "./components/navBar";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import PokemonDetails from '../src/pages/PokemonDetails';
+import PokemonDetails from './pages/detalles';
 
 
 // import PokeApi from "./pages/PokeApi";

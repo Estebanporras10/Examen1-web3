@@ -7,7 +7,7 @@ interface ModalProps {
   children: React.ReactNode;
 }
 
-const PokemonDetails: React.FC<ModalProps> = ({ isOpen, closeModal, children }) => {
+const Detalles: React.FC<ModalProps> = ({ isOpen, closeModal, children }) => {
   if (!isOpen) return null;
 
   return (
@@ -20,4 +20,4 @@ const PokemonDetails: React.FC<ModalProps> = ({ isOpen, closeModal, children }) 
   );
 };
 
-export default PokemonDetails;
+export default Detalles;
