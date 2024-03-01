@@ -1,8 +1,8 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import PokemonCard from "./carta";
+import PokemonCard from "../components/carta";
 import "../styles/style.css";
-import Modal from "./detalles";
+import Modal from "../components/detalles";
 import { useNavigate } from "react-router-dom";
 
 interface GenerationRange {

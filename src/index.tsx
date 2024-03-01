@@ -5,10 +5,9 @@ import "./index.css";
 import App from "./App";
 import NavBar from "./components/navBar";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import PokemonDetails from './pages/detalles';
+import PokemonDetails from './components/detalles';
 
 
-// import PokeApi from "./pages/PokeApi";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
